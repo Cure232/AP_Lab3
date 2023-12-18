@@ -3,7 +3,7 @@ import os
 import csv
 import cv2
 
-from main import save_as_csv
+from task1 import save_as_csv
 
 
 def scan_annotation(annotation_path: str) -> list[list[str]]:
