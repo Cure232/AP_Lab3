@@ -1,4 +1,4 @@
-#from task2 import scan_annotation
+from task2 import scan_annotation
 
 counters = dict()
 counters['BAY HORSE'] = 0

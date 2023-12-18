@@ -54,9 +54,13 @@ def copy_dataset(dataset: list[list[str]], copy_path: str) -> list[list[str]]:
     return result
 
 
-if __name__ == "__main__":
-    data = scan_annotation('annotation.csv')
-    columns = data.pop(0)
+def dataset_2(annotation_path: str):
+    """Creates dataset as in task 2 of lab 2
 
-    new_data = copy_dataset(data, 'new_dataset_task2')
-    save_as_csv(new_data, columns, 'new_annotation_task2.csv')
+    Args:
+        annotation_path (str): Annotation path.
+    """
+    data = scan_annotation(annotation_path)
+    columns = data.pop(0)
+    new_data = copy_dataset(data, 'dataset_2')
+    save_as_csv(new_data, columns, 'dataset_2_annotation.csv')
